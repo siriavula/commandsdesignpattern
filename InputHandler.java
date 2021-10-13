@@ -8,7 +8,7 @@ public class InputHandler {
     }
 
     public int playCadence(int num) {
-
+        
     }
 
 }
