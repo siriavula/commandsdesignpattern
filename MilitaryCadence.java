@@ -45,6 +45,7 @@ public class MilitaryCadence {
         catch (IOException e) {
             e.printStackTrace();
         } 
+        //catch exception
         catch (InterruptedException e) {
             e.printStackTrace();
         }
