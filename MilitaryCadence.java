@@ -9,7 +9,7 @@ import java.io.IOException;
 public class MilitaryCadence {
 
     public MilitaryCadence() {
-        
+        //empty
     }
 
     public void singIDontKnow() {
