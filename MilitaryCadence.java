@@ -1,3 +1,9 @@
+/**
+ * This class is subclass for Command and is specifically for the Everywhere Command.
+ * 
+ * @author Siri, Ali, Valerie, Maddie
+ */
+
 //import utilities for the buffered reader--want to read the song files line by line
 
 import java.io.BufferedReader;
@@ -9,18 +15,6 @@ import java.io.IOException;
 public class MilitaryCadence {
 
     public MilitaryCadence() {
-<<<<<<< HEAD
-    }
-
-    public void singIDontKnow() {
-    }
-
-    public void singEverywhereWeGo() {
-    }
-
-    public void singInArmy() {
-=======
-        //empty
     }
 
     public void singIDontKnow() {
@@ -103,6 +97,5 @@ public class MilitaryCadence {
         catch (InterruptedException e) {
             e.printStackTrace();
         }
->>>>>>> c443e096d1478af9d1d0b492c4cda7c4b2149988
     }
 }
