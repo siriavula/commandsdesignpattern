@@ -1,4 +1,5 @@
 //import utilities for the buffered reader--want to read the song files line by line
+//MilitaryCadence reads and prints the lyrics
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -9,9 +10,7 @@ import java.util.concurrent.TimeUnit;
 
 public class MilitaryCadence {
 
-    public MilitaryCadence() {
-        //empty
-    }
+    public MilitaryCadence() {}
 
     public void singIDontKnow() {
         BufferedReader r;
