@@ -3,37 +3,36 @@
  * 
  * @author Siri, Ali, Valerie, Maddie
  */
-
 import java.util.*;
 public class InputHandler {
 
     //create an instance of each command class in an arraylist
     private ArrayList<Command> commands;
-    private Command[] IDontKnowCommand;
-    private Command[] InArmyCommand;
-    private Command[] EverywhereCommand;
-//assign each instance to its correlating number
+   private Command[] IDontKnowCommand;
+   private Command[] InArmyCommand;
+   private Command[] EverywhereCommand;
+
     public InputHandler(MilitaryCadence cadence) {
-        commands.add(IDontKnowCommand);
-        commands.add(InArmyCommand);
-        commands.add(EverywhereCommand);
+        IDontKnowCommand = new Command[0];
+        InArmyCommand = new Command[1];
+        EverywhereCommand = new Command[2]; 
     }
 
-//check to see if it has a valid index 
     public int playCadence(int num) {
-        if(num == 1)
+        if(num == 0)
         {
-            IDontKnowCommand[0].execute(); //calling execute from Military Cadence
+            return 0; 
+        }
+        if(num == 1) {
+            return 1;
         }
         if(num == 2) {
-            InArmyCommand[1].execute();  //calling execute from Military Cadence
-        }
-        if(num == 3) {
-            EverywhereCommand[2].execute();//calling execute from Military Cadence
+            return 2;
         }
         else {
             return -1;
         }
-        return 0; 
+        
     }
+
 }
