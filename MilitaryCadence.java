@@ -9,12 +9,18 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
 
 //Used reference for Buffered Reader: https://www.javatpoint.com/how-to-read-file-line-by-line-in-java
 
 public class MilitaryCadence {
 
     public MilitaryCadence() {
+<<<<<<< HEAD
+=======
+
+        //empty
+>>>>>>> fd5e098f448d7210e043493f1dc01b5e00f28d02
     }
 
     public void singIDontKnow() {
@@ -33,23 +39,24 @@ public class MilitaryCadence {
 
                 //Sleep causes a pause for the input milliseconds. The words should linger in the terminal
 
-                Thread.sleep(200);
+                TimeUnit.MILLISECONDS.sleep(100);
 
                 //"Clear" should clear the terminal, so that it's ready to print the next line
 
-                Runtime.getRuntime().exec("clear");
+                System.out.print("\033[H\033[2J");
 
                 //reading the next line
 
                 line = r.readLine();
             }
             //closes the reader
-            r.close();
+            System.out.flush();
         } 
         //catch exceptions
         catch (IOException e) {
             e.printStackTrace();
         } 
+        //catch exception
         catch (InterruptedException e) {
             e.printStackTrace();
         }
@@ -63,11 +70,11 @@ public class MilitaryCadence {
             String line = r.readLine();
             while (line != null) {
                 System.out.println(line);
-                Thread.sleep(200);
-                Runtime.getRuntime().exec("clear");
+                TimeUnit.MILLISECONDS.sleep(100);
+                System.out.print("\033[H\033[2J");
                 line = r.readLine();
             }
-            r.close();
+            System.out.flush();
         } 
         catch (IOException e) {
             e.printStackTrace();
@@ -85,11 +92,11 @@ public class MilitaryCadence {
             String line = r.readLine();
             while (line != null) {
                 System.out.println(line);
-                Thread.sleep(200);
-                Runtime.getRuntime().exec("clear");
+                TimeUnit.MILLISECONDS.sleep(100);
+                System.out.print("\033[H\033[2J");
                 line = r.readLine();
             }
-            r.close();
+            System.out.flush();
         } 
         catch (IOException e) {
             e.printStackTrace();
