@@ -3,6 +3,7 @@
  * 
  * @author Siri, Ali, Valerie, Maddie
  */
+
 import java.util.*;
 public class InputHandler {
 
@@ -13,10 +14,11 @@ public class InputHandler {
     private Command[] EverywhereCommand;
 //assign each instance to its correlating number
     public InputHandler(MilitaryCadence cadence) {
-        IDontKnowCommand = new Command[0];
-        InArmyCommand = new Command[1];
-        EverywhereCommand = new Command[2]; 
+        commands.add(IDontKnowCommand);
+        commands.add(InArmyCommand);
+        commands.add(EverywhereCommand);
     }
+
 //check to see if it has a valid index 
     public int playCadence(int num) {
         if(num == 1)
@@ -34,6 +36,4 @@ public class InputHandler {
         }
         return 0; 
     }
-   
-
 }
