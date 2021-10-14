@@ -8,29 +8,26 @@ public class InputHandler {
 
     //create an instance of each command class in an arraylist
     private ArrayList<Command> commands;
-   private Command[] IDontKnowCommand;
-   private Command[] InArmyCommand;
-   private Command[] EverywhereCommand;
 
     public InputHandler(MilitaryCadence cadence) {
-        IDontKnowCommand = new Command[0];
-        InArmyCommand = new Command[1];
-        EverywhereCommand = new Command[2]; 
+        Command[] IDontKnowCommand = new Command[0];
+        Command[] InArmyCommand = new Command[1];
+        Command[] EverywhereCommand = new Command[2];
     }
 
-    public int playCadence(int num) {
-        if(num == 0)
+    public boolean playCadence(int num) {
+        if(num == 1)
         {
-            return 0; 
+            return true; 
         }
-        if(num == 1) {
-            return 1;
+        else if(num == 2) {
+            return true;
         }
-        if(num == 2) {
-            return 2;
+        else if(num == 3) {
+            return true;
         }
         else {
-            return -1;
+            return false;
         }
         
     }

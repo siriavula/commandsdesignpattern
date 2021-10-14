@@ -10,7 +10,6 @@ import java.util.concurrent.TimeUnit;
 public class MilitaryCadence {
 
     public MilitaryCadence() {
-
         //empty
     }
 
