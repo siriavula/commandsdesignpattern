@@ -3,38 +3,51 @@
  * 
  * @author Siri, Ali, Valerie, Maddie
  */
-
 import java.util.*;
 public class InputHandler {
 
-    //create an instance of each command class in an arraylist
+    /**
+     * We create an instance of an ArrayList of type Command.
+     */
     private ArrayList<Command> commands;
     private Command IDontKnowCommand;
     private Command InArmyCommand;
     private Command EverywhereCommand;
 
-//assign each instance to its correlating number
+    /**
+     * This calls instances of each command method, adds to array
+     * @param cadence is the appropriate cadence and assigned to this.cadence.
+     */
     public InputHandler(MilitaryCadence cadence) {
+        this.commands = new ArrayList<Command>();
         commands.add(IDontKnowCommand);
         commands.add(InArmyCommand);
         commands.add(EverywhereCommand);
     }
 
-//check to see if it has a valid index 
-    public int playCadence(int num) {
+    /**
+     * This checks if num is a valid index and executes the corresponding command.
+     * @param num is the index of the ArrayList of Commands.
+     * @return returns a boolean value based on whether or not the index is valid
+     */
+    public boolean playCadence(int num) {
         if(num == 0)
         {
-            IDontKnowCommand.execute(); //calling execute from Military Cadence
+            commands.get(0).execute();;
+            return true; 
         }
-        if(num == 1) {
-            InArmyCommand.execute();  //calling execute from Military Cadence
+        else if(num == 1) {
+            commands.get(1).execute();;
+            return true;
         }
-        if(num == 2) {
-            EverywhereCommand.execute();//calling execute from Military Cadence
+        else if(num == 2) {
+            commands.get(2).execute();;
+            return true;
         }
         else {
-            return -1;
+            return false;
         }
-        return 0; 
+        
     }
+
 }

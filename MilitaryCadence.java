@@ -1,18 +1,23 @@
-
-
-//import utilities for the buffered reader--want to read the song files line by line
-
+/**
+ * import utilities for the buffered reader--want to read the song files line by line
+ */
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-//Used reference for Buffered Reader: https://www.javatpoint.com/how-to-read-file-line-by-line-in-java
-
+/**
+ * Used reference for Buffered Reader: https://www.javatpoint.com/how-to-read-file-line-by-line-in-java
+ */
 public class MilitaryCadence {
 
-    public MilitaryCadence() {
-    }
+    /**
+     * This method is the public constructor of the MilitaryCadence class.
+     */
+    public MilitaryCadence() {}
 
+    /**
+     * This is a void method that displayes lyrics from the IDontKnow text file.
+     */
     public void singIDontKnow() {
         BufferedReader r;
         try {
@@ -51,6 +56,9 @@ public class MilitaryCadence {
         }
     }
 
+    /**
+     * This is a void method that displayes lyrics from the Everywhere text file.
+     */
     public void singEverywhereWeGo() {
         BufferedReader r;
         try {
@@ -73,6 +81,9 @@ public class MilitaryCadence {
         }
     }
 
+    /**
+     * This is a void method that displayes lyrics from the In Army text file.
+     */
     public void singInArmy() {
         BufferedReader r;
         try {

@@ -12,7 +12,7 @@ public class EverywhereCommand implements Command {
 
     /**
      * This is the constructor for the EverywhereCommand class.
-     * @param cadence is the appropriate cadence 
+     * @param cadence is the appropriate cadence and assigned to this.cadence.
      */
     public EverywhereCommand(MilitaryCadence cadence) {
         this.cadence = cadence;

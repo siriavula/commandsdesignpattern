@@ -1,21 +1,25 @@
 /**
-* The 'I Don't Know' Java class that is called by the Military Cadence class
-*/
+ * This class is subclass for Command and is specifically for the "I Dont Know" Command.
+ * 
+ * @author Siri, Ali, Valerie, Maddie
+ */
+
 public class IDontKnowCommand implements Command {
     /**
-     * Establishes the military cadence class in the form of a private variable
+     * Initializes a private instance of MilitaryCadence
      */
     private MilitaryCadence cadence;
+
     /**
-     * Makes the IDontKnow command a public method, calling the private variable and
-     * self-identifying the 'cadence'
+     * This is the constructor for the IDontKnow class
+     * @param cadence is the appropriate cadence and assigned to this.cadence.
      */
     public IDontKnowCommand(MilitaryCadence cadence) {
         this.cadence = cadence;
     }
+
     /**
-     * Overrides and executes the IDontKnow cadence, being called through the Military Cadence class to
-     * perform the lyrics
+     * Overrides and executes the singIDontKnow method called from the MilitaryCadence class to perform the lyrics
      */
     @Override
     public void execute() {

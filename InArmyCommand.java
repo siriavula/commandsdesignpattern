@@ -5,13 +5,22 @@
  */
 
 public class InArmyCommand implements Command {
-
+    /**
+     * Initializes a private instance of MilitaryCadence
+     */
     private MilitaryCadence cadence;
 
+    /**
+     * This is the constructor for the InArmyCommand class
+     * @param cadence is the appropriate cadence and assigned to this.cadence.
+     */
     public InArmyCommand(MilitaryCadence cadence) {
         this.cadence = cadence;
     }
 
+    /**
+     * Overrides and executes the singInArray method from the MilitaryCadence class
+     */
     public void execute() {
         cadence.singInArmy();
     }

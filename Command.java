@@ -1,5 +1,7 @@
 /**
  * This is the public interface for Command
+ * 
+ * @author Siri, Ali, Valerie, Maddie
  */
 public interface Command {
     /**
