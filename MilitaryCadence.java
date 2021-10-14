@@ -10,6 +10,17 @@ import java.util.concurrent.TimeUnit;
 public class MilitaryCadence {
 
     public MilitaryCadence() {
+<<<<<<< HEAD
+    }
+
+    public void singIDontKnow() {
+    }
+
+    public void singEverywhereWeGo() {
+    }
+
+    public void singInArmy() {
+=======
         //empty
     }
 
@@ -94,5 +105,6 @@ public class MilitaryCadence {
         catch (InterruptedException e) {
             e.printStackTrace();
         }
+>>>>>>> c443e096d1478af9d1d0b492c4cda7c4b2149988
     }
 }
