@@ -10,9 +10,9 @@ public class InputHandler {
      * We create an instance of an ArrayList of type Command.
      */
     private ArrayList<Command> commands;
-    private Command IDontKnowCommand;
-    private Command InArmyCommand;
-    private Command EverywhereCommand;
+    Command IDontKnowCommand;
+    Command InArmyCommand;
+    Command EverywhereCommand;
 
     /**
      * This calls instances of each command method, adds to array
@@ -41,13 +41,10 @@ public class InputHandler {
             return true;
         }
         else if(num == 2) {
-            commands.get(2).execute();;
+            commands.get(2).execute();
             return true;
         }
         else {
             return false;
         }
-        
-    }
-
 }
