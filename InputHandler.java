@@ -8,9 +8,9 @@ public class InputHandler {
 
     //create an instance of each command class in an arraylist
     private ArrayList<Command> commands;
-   private Command[] IDontKnowCommand;
-   private Command[] InArmyCommand;
-   private Command[] EverywhereCommand;
+    private Command[] IDontKnowCommand;
+    private Command[] InArmyCommand;
+    private Command[] EverywhereCommand;
 //assign each instance to its correlating number
     public InputHandler(MilitaryCadence cadence) {
         IDontKnowCommand = new Command[0];
@@ -19,14 +19,14 @@ public class InputHandler {
     }
 //check to see if it has a valid index 
     public int playCadence(int num) {
-        if(num == 0)
+        if(num == 1)
         {
             IDontKnowCommand[0].execute(); //calling execute from Military Cadence
         }
-        if(num == 1) {
+        if(num == 2) {
             InArmyCommand[1].execute();  //calling execute from Military Cadence
         }
-        if(num == 2) {
+        if(num == 3) {
             EverywhereCommand[2].execute();//calling execute from Military Cadence
         }
         else {

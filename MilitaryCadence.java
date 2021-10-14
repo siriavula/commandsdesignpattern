@@ -16,11 +16,6 @@ import java.util.concurrent.TimeUnit;
 public class MilitaryCadence {
 
     public MilitaryCadence() {
-<<<<<<< HEAD
-=======
-
-        //empty
->>>>>>> fd5e098f448d7210e043493f1dc01b5e00f28d02
     }
 
     public void singIDontKnow() {
