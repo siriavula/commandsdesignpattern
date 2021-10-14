@@ -47,4 +47,5 @@ public class InputHandler {
         else {
             return false;
         }
+    }
 }

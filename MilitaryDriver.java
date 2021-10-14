@@ -1,12 +1,23 @@
 import java.util.Scanner;
-
+/**
+ * Runs the code for the Military Program
+ */
 public class MilitaryDriver {
+    /**
+     * Creates an instance of the Scanner variable "reader"
+     */
     private Scanner reader;
 
+    /**
+     * This is the public constructor for the Driver
+     */
     public MilitaryDriver() {
         reader = new Scanner(System.in);
     }
 
+    /**
+     * This method actually runs the code for the Military program
+     */
     public void run() {
         MilitaryCadence cadencePlayer = new MilitaryCadence();
         InputHandler inHandler = new InputHandler(cadencePlayer);
